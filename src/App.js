@@ -30,17 +30,17 @@ const Total = () => {
   function getTotal() {
     fetch("https://covid19.ddc.moph.go.th/api/Cases/timeline-cases-all")
       .then((res) => res.json())
-      .then((data) => setTotal({ totalDataNew: data.at(-1).total_case }));
+      .then((data) => setTotal({ totalDataNew: data[-1].total_case }));
   }
   function getTotalD() {
     fetch("https://covid19.ddc.moph.go.th/api/Cases/timeline-cases-all")
       .then((res) => res.json())
-      .then((data) => setTotalD({ totalDataDet: data.at(-1).total_death }));
+      .then((data) => setTotalD({ totalDataDet: data[-1].total_death }));
   }
   function getTotalR() {
     fetch("https://covid19.ddc.moph.go.th/api/Cases/timeline-cases-all")
       .then((res) => res.json())
-      .then((data) => setTotalR({ totalDataRec: data.at(-1).total_recovered }));
+      .then((data) => setTotalR({ totalDataRec: data[-1].total_recovered }));
   }
   // getTotal()
   setInterval(getTotal(), getTotalD(), getTotalR(), 3600000);
