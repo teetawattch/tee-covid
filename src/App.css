@@ -88,6 +88,17 @@ nav a:hover {
   background-color: #0056c7;
   color: #000000;
 }
+.search {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+  padding: 0.25rem;
+}
+#searchTxt {
+  float: right;
+  clear: both;
+  padding: 0.25rem;
+}
 @media screen and (max-width: 1024px) {
   .card {
     width: 100%;

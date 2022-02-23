@@ -1,12 +1,12 @@
 import "./App.css";
 import { useState } from "react";
-import Transaction from "./components/pages/Transaction";
+import Transaction from "./components/Transaction";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./components/pages/About";
 import Dashboard from "./components/pages/Dashboard";
-import Total from "./components/pages/Total";
-import Title from "./components/pages/Title";
+import Total from "./components/Total";
+import Title from "./components/Title";
 
 
 function App() {

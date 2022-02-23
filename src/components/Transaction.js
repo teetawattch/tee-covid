@@ -21,7 +21,6 @@ const Transaction = () => {
         <span>เสียชีวิต</span>
         <span>เสียชีวิตสะสม</span>
       </li>
-
       {dataCovide.map((e) => {
         return (
           <Item
